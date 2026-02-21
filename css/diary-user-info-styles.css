@@ -1,0 +1,51 @@
+/**
+ * Diary Page User Info Button Styles
+ * Add to mylog-user-form.css or include separately
+ */
+
+/* Diary User Info Section */
+.mylog-diary-user-info {
+    margin: 1rem 0 1.5rem 0;
+    padding: 0.75rem 1rem;
+    background: #f9fafb;
+    border-left: 3px solid #3b82f6;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mylog-diary-user-info .mylog-learn-more-btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Compact placement when used inline */
+.mylog-user-selector-wrapper + .mylog-diary-user-info {
+    margin-top: 0.75rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+    .mylog-diary-user-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    
+    .mylog-diary-user-info .mylog-learn-more-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Notice variant for diary page */
+.mylog-notice--info {
+    background: #dbeafe;
+    border-color: #3b82f6;
+    color: #1e40af;
+}
+
+.mylog-notice--info a {
+    color: #1e40af;
+}
